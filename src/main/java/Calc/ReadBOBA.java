@@ -10,11 +10,11 @@ public class ReadBOBA {
 
     public void readA() {
         Scanner sc = new Scanner(System.in);
-
-
         array = sc.nextLine().toUpperCase().toUpperCase().split(" ");
+        if (array.length != 3){
+            throw new IllegalArgumentException("Неверное колличество внесенных значений, введите 2 числа и знак операций");
+        }
     }
-
 
     public boolean RomanAndArabic() {
         boolean oneNumber = true;
